@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+import sys
+import textwrap
+
+# Skull ASCII
+SKULL = r"""
+  \
+     \
+          ______
+       .-"      "-.
+      /            \
+     |,  .-.  .-.  ,|
+     | )(_o/  \o_)( |
+     |/     /\     \|
+     (_     ^^     _)
+      \__|IIIIII|__/
+       | \IIIIII/ |
+       \          /
+        `--------`
+"""
+
+def skullsay(text):
+    wrapped = textwrap.wrap(text, width=40)
+    max_len = max(len(line) for line in wrapped) + 2
+    top_border = " " + "-" * max_len
+    lines = []
+
+    if len(wrapped) == 1:
+        lines.append(f"< {wrapped[0]} >")
+    else:
+        for i, line in enumerate(wrapped):
+            if i == 0:
+                lines.append(f"/ {line.ljust(max_len-2)} \\")
+            elif i == len(wrapped)-1:
+                lines.append(f"\\ {line.ljust(max_len-2)} /")
+            else:
+                lines.append(f"| {line.ljust(max_len-2)} |")
+
+    bubble = top_border + "\n" + "\n".join(lines) + "\n" + top_border
+    print(bubble + SKULL)
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        skullsay(" ".join(sys.argv[1:]))
+    else:
+        text = input("Enter text: ")
+        skullsay(text)
