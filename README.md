@@ -16,6 +16,6 @@
 ## Installation
 
 ```
-git clone https://github.com/yourusername/skullsays.git
+git clone https://github.com/diwanaditya/skullsays
 cd skullsays
 python skullsays "Your message here"
