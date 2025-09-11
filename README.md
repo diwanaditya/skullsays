@@ -19,4 +19,5 @@
 git clone https://github.com/diwanaditya/skullsays
 cd skullsays
 python3 skullsays "Your message here"
+```
 <img width="1267" height="618" alt="Screenshot 2025-09-11 at 7 20 26 PM" src="https://github.com/user-attachments/assets/5aec3ebe-4371-4e8f-b30d-3cf49e67d984" />
