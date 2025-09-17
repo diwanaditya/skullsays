@@ -1,6 +1,6 @@
 # skullsays
 
-**skullsays** is a lightweight and fun command-line tool that displays text messages with a **horror skull ASCII art**. Inspired by `cowsay`, it provides a spooky twist for terminal messages — perfect for fun, Halloween, or tech demos.  
+**skullsays** is a lightweight and fun command-line tool that displays text messages with a **horror skull ASCII art**. Inspired by `cowsay`, it provides a spooky twist for terminal messages,perfect for fun, Halloween, or tech demos.  
 
 ---
 
