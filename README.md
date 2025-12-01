@@ -8,7 +8,7 @@
 
 - Display any text in a speech bubble above a horror skull ASCII  
 - Works directly in the terminal using Python  
-- Single-file implementation — no complex installation required  
+- Single-file implementation,no complex installation required  
 - Lightweight and easy to use  
 
 ---
